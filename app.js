@@ -15,7 +15,14 @@ cartao.innerHTML = `
             </div>
         </div>
     `
+              let respostavisivel = false
+              function viraCartao(){
+                respostavisivel = !respostavisivel
+                cartao.classlist.toggle("actrive",respostavisivel)
+            }
+            cartao.addvertListener('click', viraCartao)
 
+                  container.appendChild (cartao)
 cartao.innerHTML = `
 <div class="cartao_conteudo"`
 
